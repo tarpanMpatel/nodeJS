@@ -1,0 +1,50 @@
+const kycAccessibilityId = {
+
+  monthlyIncome: 'monthlyIncome-testId',
+  monthlyRent: 'rent-testId',
+  numberOfDependants: 'dependants-testId',
+  mortgageRadiobutton: 'mortgageRadioBtn-testId',
+  rentRadiobutton: 'rentRadioBtn-testId',
+  selectEmployer: 'selectEmployerBtn-testId',
+  cityName: 'cityName-testId',
+  countryName: 'countryName-testId',
+  changeEmployee: 'changeEmployerBtn-testId',
+  letsStartButton: 'verifyIdBtn-testId',
+  recordVideo: 'startVideoBtn-testId',
+  captureVideo: 'captureVideoBtn-testId',
+  replayVideoButton: 'replayBtn-testId',
+
+}
+const kycXPath = {
+
+  monthlyIncomeMsg: ' //*[@text=\'Monthly net salary in pounds\']',
+  tickMark: '//android.view.ViewGroup[@content-desc="monthlyIncomeContainer-testId"]/android.widget.TextView',
+  headerMessage: '//*[@text=\'To better help you get the right loan, we would\nlike to ask some share some income details.\']',
+  monthlyRentMsg: '//*[@text=\'Monthly spend on housing rent\']',
+  tickMarkformonthlyRent: '//android.view.ViewGroup[@content-desc="rentContainer-testId"]/android.widget.TextView',
+  tickMarkfornumberOfDependants: '//android.view.ViewGroup[@content-desc="dependantsContainer-testId"]/android.widget.TextView',
+  headerMessageOfEmployerDetails: '//*[@text=\'Where do you currently work?\']',
+  employer: '//*[@text=\'Karma Inc - Karma International\']',
+  employerName: '//*[@text=\'Karma Inc\']',
+  address: '//*[@text=\'18 Finsbury Square, , London, UK, EC2A 1AH\']',
+  employerName1: '//*[@accessibilityLabel=\'buildingLaneContainer- testId\' and ./parent::*[@id=\'Where do you currently work ? changeEmployerBtn - testId buildingLaneContainer - testId Selected Address buildingLaneContainer - testId buildingLaneContainer - testId cityNameContainer - testId countryNameContainer - testId\']]',
+  buildingName: '(//*[@text=\'Selected Address buildingLaneContainer- testId buildingLaneContainer-testId cityNameContainer - testId countryNameContainer - testId\']/*[@text=\'buildingLaneContainer - testId\'])[1]',
+  IDCardImage: '//*[@text=\'assets/ assets / images / kyc_id.png\']',
+  IDCardText2: '//*[@text=\'Two simple steps to get all the\ninformation we need to protect you\nand your information.\']',
+  IDCardText3: '//*[@text=\'You only have to grab your passport, \ndrivier’s licence or national ID\nand record a 3 second selfie video.\']',
+  IDCardText: '//*[@text=\'ID MADE SIMPLE\']',
+  stepText: '//*[@text=\'Step 3 of 4: Quick ID check\']',
+  IDCardText1OfVerifyYourIdentity: '//*[@text=\'PHOTO ID\']',
+  IDCardText2OfVerifyYourIdentity: '//*[@text=\'Take a picture of your photo id and\n check your information.\']',
+  IDCardImageOfVerifyYourIdentity: '//*[@text=\'assets/ assets / images / kyc_picture_start.png\']',
+  takeaPictureText: '//*[@text=\'Take a photo of your passport inside\nthe frame.This can’t be a copy.\' and @class=\'UIAStaticText\']',
+  sayKarmaText: '//*[@text=\'SAY KARMA\']',
+  sayKarmaText1: '//*[@text=\'Record a 3 second video so we know\nyou’re human.\']',
+  captureVideoText: '//*[@text=\'Please say aloud(or sign) the\nyellow text and press the red button\nwhen your done.\' and @class=\'UIAStaticText\']',
+  retakeButton: '//*[@text=\'RETAKE\']',
+  nextButton: '//*[@text=\'NEXT\']',
+  congratulationText: '//*[@text=\'CONGRATULATIONS\']',
+  approvedText: '//*[@text=\'Your credit limit is approved.\']',
+
+}
+export { kycAccessibilityId, kycXPath }
